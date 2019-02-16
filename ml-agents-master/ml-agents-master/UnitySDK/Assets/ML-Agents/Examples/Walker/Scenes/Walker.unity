@@ -1551,11 +1551,11 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a69d66e60ca12764f9486e604bf78704, type: 2}
     - target: {fileID: 4085853164035250, guid: 94dced9d2186d4a76b970fb18ef6d7a6, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1283
+      value: 621
       objectReference: {fileID: 0}
     - target: {fileID: 4085853164035250, guid: 94dced9d2186d4a76b970fb18ef6d7a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 76
+      value: -143
       objectReference: {fileID: 0}
     - target: {fileID: 4821824385666130, guid: 94dced9d2186d4a76b970fb18ef6d7a6, type: 2}
       propertyPath: m_LocalPosition.z
