@@ -149,6 +149,16 @@ public class WalkerAgent : Agent
         );
     }
 
+    void OnCollisionEnter(Collision col)
+    {
+        Debug.Log("aaaa");
+        if (col.gameObject.CompareTag("target"))
+        {
+            SetReward(1f);
+            Done();
+        }
+    }
+
     /// <summary>
     /// Only change the joint settings based on decision frequency.
     /// </summary>
