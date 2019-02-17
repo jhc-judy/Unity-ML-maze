@@ -72,22 +72,6 @@ public class WalkerAgent : Agent
         }
     }
 
-    //void OnCollisionEnter(Collision col)
-    //{
-    //    Debug.Log(col.gameObject.tag);
-    //    //if (col.gameObject.tag != "ground")
-    //    //{
-    //    //    Debug.Log(col.gameObject.tag);
-    //    //}
-
-    //    if (col.gameObject.CompareTag("target"))
-    //    {
-    //        Debug.Log("aaaa");
-    //        SetReward(1f);
-    //        Done();
-    //    }
-    //}
-
     /// <summary>
     /// Loop over body parts to add them to observation.
     /// </summary>
@@ -163,6 +147,12 @@ public class WalkerAgent : Agent
             - 0.01f * Vector3.Distance(jdController.bodyPartsDict[head].rb.velocity,
                 jdController.bodyPartsDict[hips].rb.velocity)
         );
+        if (Vector3.Distance(GameObject.Find("hips").transform.position, GameObject.Find("Target").transform.position) < 4)
+        {
+            SetReward(1f);
+            Done();
+        }
+
     }
 
     /// <summary>
